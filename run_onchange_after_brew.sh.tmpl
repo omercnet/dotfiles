@@ -1,0 +1,2 @@
+# ~/.Brewfile hash: {{ include "~/.Brewfile" | sha256sum }}
+dconf load / < {{ joinPath .chezmoi.sourceDir "dconf.ini" | quote }}
