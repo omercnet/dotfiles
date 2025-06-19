@@ -116,6 +116,7 @@ brew "libewf"
 brew "libmatio"
 brew "libpq", link: true
 brew "librsvg"
+brew "mas"
 brew "maven"
 brew "minikube"
 brew "mozjpeg"
@@ -198,6 +199,14 @@ cask "whatsapp"
 cask "xquartz"
 cask "zed"
 cask "zulu@17"
+mas "1Password for Safari", id: 1569813296
+mas "Apple Configurator", id: 1037126344
+mas "iMazing Profile Editor", id: 1487860882
+mas "LightBlue", id: 557428110
+mas "Monosnap", id: 540348655
+mas "Say No to Notch", id: 1639306886
+mas "Windows App", id: 1295203466
+mas "Xcode", id: 497799835
 vscode "adamhartford.vscode-base64"
 vscode "ahebrank.yaml2json"
 vscode "anthropic.claude-code"
