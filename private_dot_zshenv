@@ -12,6 +12,9 @@ export XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share}
 export XDG_CACHE_HOME=${XDG_CACHE_HOME:-$HOME/.cache}
 export ZDOTDIR=${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}
 
+export PYTHONDONTWRITEBYTECODE=${PYTHONDONTWRITEBYTECODE:-1}
+export GOPATH=~/dev/go
+
 # Ensure path arrays do not contain duplicates.
 typeset -gU path fpath
 
@@ -21,7 +24,9 @@ path=(
   $HOME/.local/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
+  $GOPATH/bin
   $path
 )
 
 alias assume=". assume"
+alias sshn='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
