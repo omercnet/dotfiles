@@ -1,5 +1,6 @@
 #!/bin/bash
-set -ex
+# set -e: Exit immediately if a command exits with a non-zero status.
+set -e
 
 if type op >/dev/null 2>&1; then
     echo "1Password CLI is already installed"
