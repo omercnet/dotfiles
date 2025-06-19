@@ -15,6 +15,11 @@ export ZDOTDIR=${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}
 export PYTHONDONTWRITEBYTECODE=${PYTHONDONTWRITEBYTECODE:-1}
 export GOPATH=~/dev/go
 
+export SSH_AUTH_SOCK=~/.1password/agent.sock
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # Ensure path arrays do not contain duplicates.
 typeset -gU path fpath
 
