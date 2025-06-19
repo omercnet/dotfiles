@@ -27,6 +27,3 @@ path=(
   $GOPATH/bin
   $path
 )
-
-alias assume=". assume"
-alias sshn='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'

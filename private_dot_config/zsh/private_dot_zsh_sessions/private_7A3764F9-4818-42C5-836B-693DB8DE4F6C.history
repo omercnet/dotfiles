@@ -1,0 +1,5 @@
+ls ~/.config
+ls ~/.config/zsh
+chezmoi add ~/.config/zsh
+chezmoi
+chezmoi status

@@ -2,6 +2,12 @@
 # set -e: Exit immediately if a command exits with a non-zero status.
 set -e
 
+if type brew >/dev/null 2>&1; then
+    echo "Homebrew is already installed"
+else
+    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo "Homebrew installed successfully"
+fi
 if type op >/dev/null 2>&1; then
     echo "1Password CLI is already installed"
 else
