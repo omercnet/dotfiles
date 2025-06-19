@@ -42,3 +42,5 @@ alias zdot='cd ${ZDOTDIR:-~}'
 
 alias assume=". assume"
 alias sshn='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
+
+alias chezbrew='brew bundle --global dump --all --force && chezmoi add ~/.Brewfile'
