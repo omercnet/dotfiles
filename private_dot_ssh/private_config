@@ -1,0 +1,53 @@
+Host *
+    Ciphers aes128-ctr,aes192-ctr,aes256-ctr
+    MACs hmac-sha2-256,hmac-sha1,hmac-sha2-512
+    TCPKeepAlive yes
+    ForwardAgent no
+    ForwardX11 no
+    ForwardX11Trusted yes
+    Protocol 2
+    ServerAliveInterval 60
+    ServerAliveCountMax 30
+    UseKeychain yes
+    AddKeysToAgent yes
+	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
+Host teamplay
+    HostName 62.0.68.173
+    User teamplay
+    Port 60022
+Host omerc
+    HostName 62.0.68.173
+    User ubuntu
+    Port 22
+Host pve
+    HostName 62.0.68.173
+    User root
+    Port 122
+Host dev
+    HostName 143.244.206.82
+    User dev
+Host omer.io
+    User serverpilot
+    HostName 165.227.245.210
+    Port 10000
+Host tv
+    User tv
+    HostName 192.168.1.10
+    Host home
+User home
+    HostName 172.16.10.30
+    Host bstlv
+    HostName 3.126.132.229
+    User ubuntu
+Host gago4
+    ProxyJump omer.io
+    HostName gago4.gategoing.com
+    User root
+
+Host appgago
+    ProxyJump omer.io
+    HostName app.gategoing.com
+    User root
+
+

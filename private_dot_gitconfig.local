@@ -1,0 +1,20 @@
+[user]
+	email = 639682+omercnet@users.noreply.github.com
+	name = Omer C
+	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCs8i6MYMWb2DBf/2kUBRmPrHenf5ZJhOPgIEW+H/VCRrOKlzl+jdbrlAPNyRb7/9a9XlyJj7pD0Yw2mC9gORCcKwYp8dtfbC1EGp/n6LSDUJsT+x6N+fgIJ8Xy8qFhGJ5EARQMLJFVj3f11u+d2D1JkG5ePpTyukOl4RTVSLryFO3k9R4sRflbIsxYclnfJ6ltfL1BMpMm3LYLCpgCSbSkgYfdsjs7YucjJsgDZ9Exwgjgkj0TwnGqHHJvgDPjQE2fs2oV9dar2Z5hLyjHtM7+rcWRyZmkZvXtrgYbfsq/UIDlkUAt/FhLd2SHRIbnTxE7c9C3FIZfzmV7huLupXYj
+[push]
+	autoSetupRemote = true
+[pull]
+	rebase = true
+	ff = only
+[init]
+	defaultBranch = main
+[advice]
+	skippedCherryPicks = false
+[gpg]
+	format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+  allowedSignersFile = /Users/omer/.ssh/allowed_signers
+[commit]
+  gpgsign = true

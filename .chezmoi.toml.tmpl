@@ -1,0 +1,20 @@
+{{- $isWorkComputer := promptBoolOnce . "isWorkComputer" "Is this your work computer" -}}
+
+[data]
+    isWorkComputer = {{ $isWorkComputer }}
+
+[hooks.read-source-state.pre]
+    command = ".local/share/chezmoi/.install-prerequisites.sh"
+
+[git]
+    autoCommit = true
+    autoPush = true
+
+encryption = "age"
+
+[edit]
+    command = "code"
+    args = ["--wait"]
+
+[scriptEnv]
+    OP_ACCOUNT = "my"
