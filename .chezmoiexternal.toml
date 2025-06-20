@@ -3,7 +3,9 @@
     type = "file"
     url = "https://raw.githubusercontent.com/trapd00r/LS_COLORS/master/lscolors.sh"
 
-### LSColors for Fish
-[".config/shell/lscolors.csh"]
-    type = "file"
-    url = "https://raw.githubusercontent.com/trapd00r/LS_COLORS/master/lscolors.csh"
+### Nano Syntax Highlighting
+[".config/nano/syntax"]
+    type = "archive"
+    urls = ["https://github.com/scopatz/nanorc/archive/master.tar.gz"]
+    refreshPeriod = "168h"
+    stripComponents = 1

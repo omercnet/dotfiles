@@ -33,8 +33,8 @@ done
 unset _rc
 
 # Create an amazing Zsh config using antidote plugins.
-# source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
-# antidote load
+source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
+antidote load
 
 # To customize prompt, run `p10k configure` or edit .p10k.zsh.
 [[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh
