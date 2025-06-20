@@ -1,0 +1,5 @@
+github.com:
+    user: omercnet
+    git_protocol: ssh
+    users:
+        omercnet:
