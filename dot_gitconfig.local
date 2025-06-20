@@ -18,3 +18,8 @@
   allowedSignersFile = /Users/omer/.ssh/allowed_signers
 [commit]
   gpgsign = true
+
+[user]
+  name = "{{ .gitUser.name }}"
+  email = "{{ .gitUser.email }}"
+  github = "{{ .gitHub.user }}"
