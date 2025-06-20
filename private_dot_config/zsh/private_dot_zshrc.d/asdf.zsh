@@ -1,1 +1,0 @@
-export ASDF_PYTHON_DEFAULT_PACKAGES_FILE${ZDOTDIR:-$HOME}/.default-python-packages
