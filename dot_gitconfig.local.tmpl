@@ -19,7 +19,5 @@
 [commit]
   gpgsign = true
 
-[user]
-  name = "{{ .gitUser.name }}"
-  email = "{{ .gitUser.email }}"
-  github = "{{ .gitHub.user }}"
+{{ output "/usr/bin/git remote get-url origin" }}
+
