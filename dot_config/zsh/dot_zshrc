@@ -37,4 +37,8 @@ source ${ZDOTDIR:-$HOME}/.antidote/antidote.zsh
 antidote load
 
 # To customize prompt, run `p10k configure` or edit .p10k.zsh.
-[[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh
+if [[ -n "$CURSOR_TRACE_ID" ]]; then
+  ZSH_THEME=""
+else
+  [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
+fi
